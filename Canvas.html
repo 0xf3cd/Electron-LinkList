@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<style type="text/css">
+	@import "./css/LinkList.css";
+</style>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Hello World!</title>
+	</head>
+	<!-- <script src="./node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+	<link rel="stylesheet" href="./node_modules/sweetalert2/dist/sweetalert2.min.css">
+
+	Include a polyfill for ES6 Promises (optional) for IE11 and Android browser
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script> -->
+	<body style="-webkit-app-region: drag">
+		<div class="container">
+			<div class="left" id="draw-shapes">
+				<img src="./source/settings.svg" id="setting" width="30" height="30">
+			</div>
+			<div class="right" id="control-panel">
+			</div>
+			
+		</div>
+		<script>
+			require('./CanvasTop.js');
+			//require('./CircularLinkList.js');
+
+			// let l = new LinkList();
+			// console.log(l);
+
+			function forbidScroll(e) {
+				e.preventDefault && e.preventDefault();
+				e.returnValue = false;
+				e.stopPropagation && e.stopPropagation();
+				return false;
+			}
+			const b = document.body;
+			b.addEventListener('mousewheel', forbidScroll, false);//禁止滚动
+			b.addEventListener('touchmove', forbidScroll, false);
+
+			const {webFrame} = require('electron');
+			webFrame.setVisualZoomLevelLimits(1, 1);//关闭双指缩放
+
+			// const getMousePos = function(event) {
+			//       let e = event || window.event;
+			//       return {'x':e.clientX,'y':e.clientY}
+			// }
+			// document.getElementById('draw-shapes').addEventListener('click', (e) => {
+			// 	const pos = getMousePos(e);
+			// 	console.log(pos.x + ' ' + pos.y);
+			// }, false);
+		</script>
+	</body>
+</html>

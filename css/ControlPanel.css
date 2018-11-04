@@ -1,0 +1,162 @@
+html,body{
+	height: 100%;
+}
+/*.control-panel {
+	display: flex;
+	width: 100%;
+}*/
+
+/*.control-panel */
+.select-type {
+	height: 200px;
+	width: 160px;
+	float: left;
+}
+
+.select-type .check {
+	height: 200px;
+	width: 80px;
+	float: left;
+}
+
+.select-type .title {
+	height: 200px;
+	width: 80px;
+	float: left;
+}
+
+/*.control-panel */
+.buttons {
+	height: 200px;
+	width: 140px;
+	float: left;
+}
+
+/*.control-panel .select-type .check {
+	width: 40%;
+}
+
+.control-panel .select-type .title {
+	width: 60%;
+}*/
+
+
+
+/*.st0{
+	fill: #3A4AD3;
+}
+.st1{
+	fill: #FFFFFF;
+}*/
+/*path{
+	transform: translate(150px, 42px);
+	-webkit-transform-origin:midd;
+	-webkit-transform: scale(0.1);
+}*/
+
+.title1{
+	font-family: "冬青黑体", "Hiragino Sans GB";
+	font-size: 13px;
+	color: white;
+	transform: translate(10px, 40px);
+}
+.checkmark1 {
+	transform: translate(40px, 45px);
+	/*position: absolute;
+    top: 0;right: 0;bottom: 0;left: 0;
+    margin: auto;*/
+    /*-webkit-transform-origin:center center;
+     transform-origin:center center;*/
+}
+
+.title2{
+	font-family: "冬青黑体", "Hiragino Sans GB";
+	font-size: 13px;
+	color: white;
+	transform: translate(10px, 60px);
+}
+.checkmark2 {
+	transform: translate(3px, 99px);
+}
+
+.title3{
+	font-family: "冬青黑体", "Hiragino Sans GB";
+	font-size: 13px;
+	color: white;
+	transform: translate(10px, 80px);
+}
+.checkmark3 {
+	transform: translate(40px, 116px);
+}
+
+/*.circle1 {
+	transform: translate(40px, 60px);
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	background: red;
+}*/
+
+.search-button {
+	transform: translate(20px, 50px);
+	width: 120px;
+	height: 25px;
+	border-radius:20px;
+	background-color: #F27A7B;
+	border: none;
+	transition-duration: 0.4s;
+	color: white;
+}
+
+.search-button:hover {
+    background-color: #FFFFFF; /* Green */
+    color: #F27A7B;
+}
+
+.add-button {
+	transform: translate(20px, 60px);
+	width: 120px;
+	height: 25px;
+	border-radius:20px;
+	background-color: #FDD244;
+	border: none;
+	transition-duration: 0.4s;
+	color: white;
+}
+
+.add-button:hover {
+    background-color: #FFFFFF; /* Green */
+    color: #FDD244;
+}
+
+.delete-button {
+	transform: translate(20px, 70px);
+	width: 120px;
+	height: 25px;
+	border-radius:20px;
+	background-color: #E2B3FD;
+	border: none;
+	transition-duration: 0.4s;
+	color: white;
+}
+
+.delete-button:hover {
+    background-color: #FFFFFF; /* Green */
+    color: #E2B3FD;
+}
+
+.modify-button {
+	transform: translate(20px, 80px);
+	width: 120px;
+	height: 25px;
+	border-radius:20px;
+	background-color: #4091E1;
+	border: none;
+	transition-duration: 0.4s;
+	color: white;
+}
+
+.modify-button:hover {
+    background-color: #FFFFFF; /* Green */
+    color: #4091E1;
+}
